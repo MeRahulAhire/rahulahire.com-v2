@@ -1,12 +1,12 @@
 
 import Gtm from './gtm'
 import Navbar from './navbar'
-import Preload from './preload'
+// import Preload from './preload'
 export default function Container() {
     return (
         <>
             <Gtm/>
-            <Preload/>
+            // <Preload/>
             <Navbar/>
         </>
     )
