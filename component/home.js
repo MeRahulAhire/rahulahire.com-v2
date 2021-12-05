@@ -1,9 +1,48 @@
-import Head from "next/head"
-import style from '../style/home.module.css'
+import React, { useEffect } from "react";
+import Head from "next/head";
+import style from "../style/home.module.css";
+import Container from "./container";
 export default function Home() {
-    return (
-        <>
-            <Head>
+  useEffect(() => {
+    document.getElementById("vid1").play();
+  }, []);
+  let isSec2Scrolled = false;
+  let isSec3Scrolled = false;
+  let isSec4Scrolled = false;
+  let isSec5Scrolled = false;
+  useEffect(() => {
+      let a = 1
+      console.log(a++)
+      a++
+      window.addEventListener("scroll", () => {
+        const scrollPosition = (window.scrollY / window.innerHeight) * 100;
+        const vid2 = document.getElementById("vid2");
+        const vid3 = document.getElementById("vid3");
+        const vid4 = document.getElementById("vid4");
+        const vid5 = document.getElementById("vid5");
+    
+        if (scrollPosition > 69 && !isSec2Scrolled) {
+          vid2.play();
+          isSec2Scrolled = true;
+        }
+        if (scrollPosition > 169 && !isSec3Scrolled) {
+          vid3.play();
+          isSec3Scrolled = true;
+        }
+        if (scrollPosition > 269 && !isSec4Scrolled) {
+          vid4.play();
+          isSec4Scrolled = true;
+        }
+        if (scrollPosition > 369 && !isSec5Scrolled) {
+          vid5.play();
+          isSec5Scrolled = true;
+        }
+      });
+  })
+  return (
+    <>
+    <Container/>
+      <Head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -52,9 +91,9 @@ export default function Home() {
         <meta name="twitter:image:alt" content="Rahul Ahire - Alt" />
         <title>Hi, I'm Rahul Ahire</title>
       </Head>
-      <section className={style['sec-container']}>
-        <div className={`${style.sidedrawer} ${style['sd-sec1']}`}>
-          <div className={style['sd-wrapper']}>
+      <section className={style["sec-container"]}>
+        <div className={`${style.sidedrawer} ${style["sd-sec1"]}`}>
+          <div className={style["sd-wrapper"]}>
             <h1>Hi, I'm Rahul Ahire</h1>
             <p>
               I'm mostly a self Taught Person. I have diverse interest in Tech,
@@ -63,18 +102,18 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className={style['vid-container']}>
+        <div className={style["vid-container"]}>
           <video
-            src='./assets/sec1-halftone.mp4'
+            src="./assets/sec1-halftone.mp4"
             muted
             id="vid1"
             className={style.video}
-            autoPlay
+            // autoPlay
           ></video>
-          <div className={style['vid1-dimmer']} />
+          <div className={style["vid1-dimmer"]} />
         </div>
-        <div className={`${style['mob-drawer']} ${style['sd-sec1']}`}>
-          <div className={`${style['sd-wrapper']} ${style['sd-mobi']}`}>
+        <div className={`${style["mob-drawer"]} ${style["sd-sec1"]}`}>
+          <div className={`${style["sd-wrapper"]} ${style["sd-mobi"]}`}>
             <h1>Hi, I'm Rahul Ahire</h1>
             <p>
               I'm mostly a self Taught Person. I have diverse interest in Tech,
@@ -85,9 +124,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="sec-container">
-        <div className="sidedrawer sd-sec2">
-          <div className="sd-wrapper ">
+      <section className={style["sec-container"]}>
+        <div className={`${style.sidedrawer} ${style["sd-sec2"]}`}>
+            <div className={style.sdbg}>
+
+          <div className={style["sd-wrapper"]}>
             <h3>Pune, the City where I live</h3>
             <p>
               Be it Gandhi, Britishers or Shri Chhatrapati Shivaji Maharaj, Pune
@@ -96,12 +137,20 @@ export default function Home() {
               <a href="https://en.wikipedia.org/wiki/Pune">Know more</a>.
             </p>
           </div>
+            </div>
         </div>
-        <div className="vid-container">
-          <video src='./pu' muted id="vid2" className="video"></video>
+        <div className={style["vid-container"]}>
+          <video
+            src="./assets/pune-3d-view.mp4"
+            muted
+            id="vid2"
+            className={style.video}
+          ></video>
         </div>
-        <div className="mob-drawer sd-sec2">
-          <div className="sd-wrapper sd-mobi">
+        <div className={`${style["mob-drawer"]} ${style["sd-sec2"]}`}>
+            <div className={style.sdbg}>
+
+          <div className={`${style["sd-wrapper"]} ${style["sd-mobi"]}`}>
             <h3>Pune, the City where I live</h3>
             <p>
               Be it Gandhi, Britishers or Shri Chhatrapati Shivaji Maharaj, Pune
@@ -116,12 +165,13 @@ export default function Home() {
               </a>
             </p>
           </div>
+            </div>
         </div>
       </section>
 
-      <section className="sec-container">
-        <div className="sidedrawer sd-sec3">
-          <div className="sd-wrapper ">
+      <section className={style["sec-container"]}>
+        <div className={`${style.sidedrawer} ${style["sd-sec3"]}`}>
+          <div className={style["sd-wrapper"]}>
             <h3 className="">Shirur...</h3>
             <p>
               Although, I live in Pune but I was born, raised and lived first 16
@@ -129,11 +179,16 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="vid-container">
-          <video src='./pu' muted id="vid3" className="video"></video>
+        <div className={style["vid-container"]}>
+          <video
+            src="./assets/pune-to-shirur.mp4"
+            muted
+            id="vid3"
+            className={style.video}
+          ></video>
         </div>
-        <div className="mob-drawer sd-sec3">
-          <div className="sd-wrapper sd-mobi">
+        <div className={`${style["mob-drawer"]} ${style["sd-sec3"]}`}>
+          <div className={`${style["sd-wrapper"]} ${style["sd-mobi"]}`}>
             <h3 className="">Shirur...</h3>
             <p>
               Although, I live in Pune but I was born, raised and lived first 16
@@ -143,9 +198,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="sec-container">
-        <div className="sidedrawer sd-sec3 sd-4">
-          <div className="sd-wrapper ">
+      <section className={style["sec-container"]}>
+        <div className={`${style.sidedrawer}  ${style["sd-4"]}`}>
+          <div className={style["sd-wrapper"]}>
             <p>
               Ever since my childhood I've always been facinated with all shows
               like Cosmos, Curiosity, Into the wormhole with Morgan Freeman,etc.
@@ -156,11 +211,16 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="vid-container">
-          <video src='./pu' muted id="vid4" className="video"></video>
+        <div className={style["vid-container"]}>
+          <video
+            src="./assets/my-facination.mp4"
+            muted
+            id="vid4"
+            className={style.video}
+          ></video>
         </div>
-        <div className="mob-drawer sd-sec3 sd-4">
-          <div className="sd-wrapper sd-mobi">
+        <div className={`${style["mob-drawer"]} ${style["sd-4"]}`}>
+          <div className={`${style["sd-wrapper"]} ${style["sd-mobi"]}`}>
             <p>
               Ever since my childhood I've always been facinated with all shows
               like Cosmos, Curiosity, Into the wormhole with Morgan Freeman,etc.
@@ -172,9 +232,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="sec-container">
-        <div className="sidedrawer sd-sec3 sd-5">
-          <div className="sd-wrapper ">
+      <section className={style["sec-container"]}>
+        <div className={`${style.sidedrawer}  ${style["sd-5"]}`}>
+          <div className={style["sd-wrapper"]}>
             <p>
               As I had interest in Space science I decided to study for JEE
               after my 10th grade. Little did I knew how f'd I would be in that
@@ -185,11 +245,16 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="vid-container">
-          <video src='./pu' muted id="vid5" className="video"></video>
+        <div className={style["vid-container"]}>
+          <video
+            src="./assets/elon-musk.mp4"
+            muted
+            id="vid5"
+            className={style.video}
+          ></video>
         </div>
-        <div className="mob-drawer sd-sec3 sd-5">
-          <div className="sd-wrapper sd-mobi">
+        <div className={`${style["mob-drawer"]} ${style["sd-5"]}`}>
+          <div className={`${style["sd-wrapper"]} ${style["sd-mobi"]}`}>
             <p>
               As I had interest in Space science I decided to study for JEE
               after my 10th grade. Little did I knew how f'd I would be in that
@@ -201,13 +266,13 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="pink-wrap">
-        <div className="pink-grid">
+      <section className={style["pink-wrap"]}>
+        <div className={style["pink-grid"]}>
           <h3>My Future Plans</h3>
         </div>
       </section>
-      <section className="future">
-        <div className="future-wrap">
+      <section className={style.future}>
+        <div className={style["future-wrap"]}>
           <p>
             Since 2018, I've got to learn on various things and taking those
             inspiration, Within next 10 years I want to expand in these three
@@ -249,14 +314,14 @@ export default function Home() {
           </ol>
         </div>
       </section>
-      <footer className='footer'>
-        <div className="footer-wrap">
-          <div className="email">
+      <footer className={style.footer}>
+        <div className={style["footer-wrap"]}>
+          <div className={style.email}>
             If you got some Ideas, Feedback or suggestion, Please send it my way{" "}
             <a href="mailto:info@rahulahire.com">info@RahulAhire.com</a>
           </div>
-          <div className="social-links">
-            <div className="links l1">
+          <div className={style["social-links"]}>
+            <div className={`${style.links} ${style.l1}`}>
               <a
                 href="https://twitter.com/MeRahulAhire"
                 target="_blank"
@@ -311,6 +376,6 @@ export default function Home() {
           </div>
         </div>
       </footer>
-        </>
-    )
+    </>
+  );
 }

@@ -69,6 +69,16 @@
   .sd-sec2 {
     background-color: #0f0f0f;
     color: #f7f7f7;
+    background-image: url('../public/assets/img/shaniwar-wada.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+  .sdbg{
+      height: 100%;
+      width: 100%;
+      background-color: rgba(15, 15, 15, 0.8);
+      display: grid;
+      place-items: center;
   }
   .sd-sec2 h3 {
     font-family: "Righteous";
@@ -82,8 +92,11 @@
     zoom: 0.1;
   }
   .sd-sec3 {
-    background-color: #0f0f0f;
+   
     color: #f7f7f7;
+    background-image: url('../public/assets/img/pexels-adrien-olichon-3646206.jpg');
+    background-position: center;
+    background-size: cover;
   }
   .sd-sec3 h3 {
     font-family: "Righteous";
@@ -94,11 +107,15 @@
     zoom: 0.1;
   }
   .sd-4 {
-    background-color: #fadfb3;
+    background-image: url('../public/assets/img/pexels-oussama-ghanemi-4254073.jpg');
+    background-position: center;
+    background-size: cover;
     color: #0f0f0f;
   }
   .sd-5 {
-    background-color: #454c6e;
+    background-image: url('../public/assets/img/pexels-spacex-23764.jpg');
+    background-position: center;
+    background-size: cover;
     color: #f7f7f7;
   }
   .pink-wrap {
