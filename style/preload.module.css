@@ -9,6 +9,9 @@
     z-index: 30000;
     position: absolute;
   }
+  .plHidden{
+      display: none;
+  }
   
   .loader-wrapper {
     -webkit-box-sizing: border-box;
