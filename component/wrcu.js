@@ -1,6 +1,7 @@
 
 import Head from "next/head";
 import style from '../style/wrcu.module.css'
+import Container from "./container";
 const rcu = () => {
   const rps = document.getElementById("rps");
   const size = document.getElementById("size");
@@ -107,6 +108,7 @@ export default function Wrcu() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image:alt" content="Rahul Ahire" />
       </Head>
+      <Container/>
       <div className={style["container"]}>
         <div className={style["top"]}>
           <div className={style["top-wrap"]}>

@@ -41,7 +41,7 @@ export default function Home() {
   })
   return (
     <>
-    <Container/>
+    
       <Head>
         <meta charset="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
@@ -91,6 +91,7 @@ export default function Home() {
         <meta name="twitter:image:alt" content="Rahul Ahire - Alt" />
         <title>Hi, I'm Rahul Ahire</title>
       </Head>
+      <Container/>
       <section className={style["sec-container"]}>
         <div className={`${style.sidedrawer} ${style["sd-sec1"]}`}>
           <div className={style["sd-wrapper"]}>
