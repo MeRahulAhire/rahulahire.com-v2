@@ -25,14 +25,14 @@ export default function Dynamodb() {
 
         <meta
           property="og:image"
-          content="https://s3.ap-south-1.amazonaws.com/rahulahire.com/server+image300x300.jpg"
+          content="./assets/img/tudc cover image 1080p.png"
         />
         <meta property="og:title" content="The Ultimate DynamoDB Course" />
         <meta
           property="og:description"
           content="The only practical and purpose driven DynamoDB Course covered with all the aspects that you need to master DynamoDB"
         />
-        <meta property="og:url" content="https://rahulahire.com/dynamodb" />
+        <meta property="og:url" content="https://rahulahire.com" />
         <meta property="og:site_name" content="Rahul Ahire" />
 
         <meta name="twitter:title" content="The Ultimate DynamoDB Course" />
@@ -42,9 +42,9 @@ export default function Dynamodb() {
         />
         <meta
           name="twitter:image"
-          content="https://s3.ap-south-1.amazonaws.com/rahulahire.com/server+image300x300.jpg"
+          content="./assets/img/tudc cover image 1080p.png"
         />
-        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image:alt" content="Rahul Ahire" />
       </Head>
     </div>

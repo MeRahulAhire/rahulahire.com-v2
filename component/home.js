@@ -11,9 +11,6 @@ export default function Home() {
   let isSec4Scrolled = false;
   let isSec5Scrolled = false;
   useEffect(() => {
-      let a = 1
-      console.log(a++)
-      a++
       window.addEventListener("scroll", () => {
         const scrollPosition = (window.scrollY / window.innerHeight) * 100;
         const vid2 = document.getElementById("vid2");
@@ -88,7 +85,7 @@ export default function Home() {
           name="twitter:image"
           content="https://s3.ap-south-1.amazonaws.com/rahulahire.com/black-hole.jpg"
         />
-        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image:alt" content="Rahul Ahire - Alt" />
         <title>Hi, I'm Rahul Ahire</title>
       </Head>
