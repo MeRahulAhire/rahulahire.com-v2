@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Lato:wght@300;400&family=Lobster+Two&family=Open+Sans:wght@400;500&family=Righteous&family=Shippori+Antique+B1&display=swap');
 
-
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 .sidedrawer {
     grid-area: a;
     display: grid;
@@ -16,7 +16,7 @@
     margin-right: 16px;
   }
   .sd-wrapper h1 {
-    font-family: "Architects Daughter";
+    font-family: 'Architects Daughter', cursive;
     font-size: 2rem;
   }
   .sd-wrapper p {
