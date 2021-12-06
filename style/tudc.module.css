@@ -76,12 +76,27 @@
       "b b"
       "a a";
   }
-  .head{
-      font-size: 2rem;
-      text-align: center;
-      align-items: center;
+  .head {
+    font-size: 2rem;
+    text-align: center;
+    align-items: center;
   }
   .headbutton {
     margin-top: 1.5rem;
+  }
+}
+@media screen and (max-height: 450px) {
+  .sec1container {
+    max-width: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "a b";
+  }
+  .head {
+    align-items: flex-start;
+    text-align: left;
   }
 }

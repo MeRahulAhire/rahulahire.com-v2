@@ -2,6 +2,9 @@ import Head from "next/head";
 import style from '../style/tudc.module.css'
 import Image from "next/image";
 export default function Tudc() {
+  const buyCourse =() => {
+    window.open("https://rahulahire.thinkific.com/users/checkout/auth", 'TUDC', "height=700,width=400");
+  }
   return (
     <>
       <Head>
@@ -53,11 +56,11 @@ export default function Tudc() {
                   The Ultimate <br /> DynamoDB Course
                   <p>The most Intuitive and Practical way to learn DynamoDB</p>
                   <div className={style.headbutton}>
-                    <button className={style.buyNow}>Buy Now</button>
+                    <button onClick={buyCourse} className={style.buyNow}>Buy Now</button>
                   </div>
                 </div>
                 <div className={style.sec1Image}>
-                  <Image layout='responsive' width={400} height={400} src='/assets/img/database.svg'/>
+                  <Image  width={400} height={400} src='/assets/img/database.svg'/>
                 </div>
               </div>
           </div>
