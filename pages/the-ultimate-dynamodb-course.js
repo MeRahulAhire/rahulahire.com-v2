@@ -1,6 +1,7 @@
 import Head from "next/head";
 import style from '../style/tudc.module.css'
 import Image from "next/image";
+import Container from '../component/container'
 export default function Tudc() {
   const buyCourse =() => {
     window.open("https://rahulahire.thinkific.com/users/checkout/auth", 'TUDC', "height=700,width=400");
@@ -49,6 +50,7 @@ export default function Tudc() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image:alt" content="Rahul Ahire" />
       </Head>
+      <Container/>
       <section className={style.sec1}>
           <div className={style.bgCover}>
               <div className={style.sec1container}>
