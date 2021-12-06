@@ -1,0 +1,87 @@
+.sec1 {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://s3.ap-south-1.amazonaws.com/rahulahire.com/pexels-adrien-olichon-2387793+(1).jpg");
+}
+
+/* @font-face {
+  font-family: 'Gilroy';
+  src: url("https://s3.ap-south-1.amazonaws.com/rahulahire.com/Gilroy-Bold.woff");
+} */
+.bgCover {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(15, 15, 15, 0.5);
+  display: grid;
+  place-items: center;
+}
+.sec1container {
+  max-width: 1000px;
+  margin-left: 15px;
+  margin-right: 15px;
+  height: 650px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "a b";
+}
+
+.head {
+  color: #f7f7f7;
+  font-family: "Gilroy";
+  font-weight: bold;
+  font-size: 3.5rem;
+  grid-area: a;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.head p {
+  font-size: 1rem;
+  color: #f7f7f7;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 450;
+}
+.sec1Image {
+  grid-area: b;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+.headbutton {
+  margin-top: 2.5rem;
+}
+.buyNow {
+  width: 150px;
+  height: 50px;
+  display: grid;
+  align-items: center;
+  background-color: #ff913d;
+  border: 0;
+  border-radius: 25px;
+  outline: none;
+  font-family: "Righteous", cursive;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+.buyNow:hover {
+  background-color: #51bc37;
+}
+
+@media screen and (max-width: 768px) {
+  .sec1container {
+    grid-template-areas:
+      "b b"
+      "a a";
+  }
+  .head{
+      font-size: 2rem;
+      text-align: center;
+      align-items: center;
+  }
+  .headbutton {
+    margin-top: 1.5rem;
+  }
+}
