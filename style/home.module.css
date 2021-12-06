@@ -164,8 +164,9 @@
     margin-top: 10px;
     font-size: 1rem;
   }
-  .future a{
+  .future li a{
     color: white;
+    text-decoration: underline;
   }
   .footer{
     background: #0f0f0f;
