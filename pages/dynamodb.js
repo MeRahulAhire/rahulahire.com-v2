@@ -12,7 +12,6 @@ export default function Dynamodb() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>The Ultimate DynamoDB Course</title>
         <meta name="theme-color" content="#212121" />
-        <link rel="canonical" href="https://rahul.com" />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
@@ -25,7 +24,7 @@ export default function Dynamodb() {
 
         <meta
           property="og:image"
-          content="./assets/img/tudc cover image 1080p.png"
+          content="https://s3.ap-south-1.amazonaws.com/rahulahire.com/tudc+cover+image+1080p.png"
         />
         <meta property="og:title" content="The Ultimate DynamoDB Course" />
         <meta
@@ -42,7 +41,7 @@ export default function Dynamodb() {
         />
         <meta
           name="twitter:image"
-          content="./assets/img/tudc cover image 1080p.png"
+          content="https://s3.ap-south-1.amazonaws.com/rahulahire.com/tudc+cover+image+1080p.png"
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image:alt" content="Rahul Ahire" />
