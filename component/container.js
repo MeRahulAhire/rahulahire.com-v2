@@ -1,10 +1,10 @@
 import Gtm from "./gtm";
 import Navbar from "./navbar";
-import Fbtag from "./fbtag";
+import Tag from "./tag";
 export default function Container() {
   return (
     <>
-    <Fbtag/>
+    <Tag/>
       <Gtm />
       <Navbar />
     </>
