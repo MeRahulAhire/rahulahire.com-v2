@@ -2,7 +2,7 @@ import React,{useEffect} from "react";
 import Head from "next/head";
 export default function Dynamodb() {
     useEffect(()=> {
-        window.location = '/the-ultimate-dynamodb-course'
+        window.location = 'https://rahulahire.thinkific.com/courses/the-ultimate-dynamodb-course'
     })
   return (
     <div>

@@ -1,17 +1,24 @@
 import Head from "next/head";
+import { useEffect } from "react";
 import style from '../style/tudc.module.css'
 import Image from "next/image";
 import Container from '../component/container'
+import Plyr from 'react-plyr';
 export default function Tudc() {
   const buyCourse =() => {
-    window.open("https://rahulahire.thinkific.com/users/checkout/auth", 'TUDC', "height=700,width=400");
+    window.open("https://rahulahire.thinkific.com/");
   }
+  useEffect(()=> {
+    window.location = 'https://rahulahire.thinkific.com/courses/the-ultimate-dynamodb-course'
+})
+  const player = new Plyr('#player');
   return (
-    <>
+    <div style={{display: 'none',}}>
       <Head>
         <meta charset="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdn.plyr.io/3.6.9/plyr.css" />
         <title>The Ultimate DynamoDB Course</title>
         <link rel="shortcut icon" href="https://s3.ap-south-1.amazonaws.com/rahulahire.com/server+image300x300.jpg" type="image/x-icon" />
         <meta name="theme-color" content="#0f0f0f" />
@@ -58,7 +65,7 @@ export default function Tudc() {
                   The Ultimate <br /> DynamoDB Course
                   <p>The most Intuitive and Practical way to learn DynamoDB</p>
                   <div className={style.headbutton}>
-                    <button onClick={buyCourse} className={style.buyNow}>Buy Now</button>
+                    <button onClick={buyCourse} className={style.buyNow}>Learn More</button>
                   </div>
                 </div>
                 <div className={style.sec1Image}>
@@ -67,6 +74,19 @@ export default function Tudc() {
               </div>
           </div>
       </section>
-    </>
+      <section className={style.vidSec}>
+        <div className={style.vidContainer}>
+          <div className={style.vidText}>
+            Why get this Course?
+          </div>
+        <Plyr
+      type="vimeo" // or "vimeo"
+      videoId="652938797"
+    />
+        </div>
+
+      </section>
+
+    </div>
   );
 }
