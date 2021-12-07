@@ -1,5 +1,6 @@
 import React,{useEffect} from "react";
 import Head from "next/head";
+import Container from "../component/container";
 export default function Dynamodb() {
     useEffect(()=> {
         window.location = 'https://rahulahire.thinkific.com/courses/the-ultimate-dynamodb-course'
@@ -46,6 +47,7 @@ export default function Dynamodb() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image:alt" content="Rahul Ahire" />
       </Head>
+      <Container/>
     </div>
   );
 }
