@@ -3,7 +3,7 @@ export default function Tag() {
   return (
     <>
       {/* Facebook Tag */}
-      {/* <Script
+      <Script
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
@@ -19,9 +19,9 @@ fbq('init', '378350410704161');
 fbq('track', 'PageView');
         `,
         }}
-      /> */}
+      />
       {/* Twitter Tag */}
-      {/* <Script
+      <Script
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
@@ -33,9 +33,9 @@ fbq('track', 'PageView');
           twq('track','PageView');
         `,
         }}
-      /> */}
+      />
       {/* quora Tag */}
-      {/* <Script
+      <Script
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
@@ -44,9 +44,9 @@ qp('init', 'aa77c888af064514a7bc7bbcb50f80e3');
 qp('track', 'ViewContent');
         `,
         }}
-      /> */}
+      />
       {/* GA TAG */}
-      {/* <Script src="https://www.googletagmanager.com/gtag/js?id=G-SSHF0HW0GB" />
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-SSHF0HW0GB" />
       <Script
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
@@ -58,9 +58,9 @@ qp('track', 'ViewContent');
   gtag('config', 'G-SSHF0HW0GB');
         `,
         }}
-      /> */}
+      />
       {/* MS clarity */}
-      {/* <Script
+      <Script
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
@@ -71,20 +71,7 @@ qp('track', 'ViewContent');
         })(window, document, "clarity", "script", "677n2b25tv");
         `,
         }}
-      /> */}
-      {/* GTM  script*/}
-      <Script
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NZN5LVK');
-        `,
-        }}
       />
-          </>
+    </>
   );
 }
