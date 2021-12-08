@@ -3,7 +3,7 @@ export default function Tag() {
   return (
     <>
       {/* Facebook Tag */}
-      <Script id='facebook'
+      <Script id="facebook"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
@@ -21,7 +21,7 @@ fbq('track', 'PageView');
         }}
       />
       {/* Twitter Tag */}
-      <Script id='twitter'
+      <Script id="twitter"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
@@ -46,7 +46,7 @@ qp('track', 'ViewContent');
         }}
       />
       {/* GA TAG */}
-      <Script id='gtm' src="https://www.googletagmanager.com/gtag/js?id=G-SSHF0HW0GB" />
+      <Script id="gtm" src="https://www.googletagmanager.com/gtag/js?id=G-SSHF0HW0GB" />
       <Script id="gtm_script"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
@@ -60,7 +60,7 @@ qp('track', 'ViewContent');
         }}
       />
       {/* MS clarity */}
-      <Script id='ms_clarity'
+      <Script id="ms_clarity"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
