@@ -1,21 +1,22 @@
-import { useRouter } from "next/router"
-
+import axios from 'axios'
+import Tag from '../../component/tag'
 export default function Id({blogPage}) {
     
     return (
-        <div>
-           <h1>Page ID : {blogPage}</h1>
-        </div>
+        <>
+           {blogPage}
+           <Tag/>
+        </>
     )
 }
 
 export async function getServerSideProps(context) {
-    // const router = useRouter()
-    // const blogPage = router.query.id
     const id = context.params.id
+    const baseUrl = `https://blog.rahulahire.com/${id}`
+    const res = (await axios.get(baseUrl)).data
     return {
         props:{
-            blogPage: id
+            blogPage: res
         }
     }
 }

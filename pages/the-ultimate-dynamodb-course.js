@@ -22,7 +22,7 @@ export default function Tudc() {
         <title>The Ultimate DynamoDB Course</title>
         <link rel="shortcut icon" href="https://s3.ap-south-1.amazonaws.com/rahulahire.com/server+image300x300.jpg" type="image/x-icon" />
         <meta name="theme-color" content="#0f0f0f" />
-        <link href="https://fonts.googleapis.com/css2?family=Alata&family=Architects+Daughter&family=Lobster&family=Open+Sans:wght@300;400;500&family=Righteous&display=swap" rel="stylesheet"/>
+        {/* <link href="https://fonts.googleapis.com/css2?family=Alata&family=Architects+Daughter&family=Lobster&family=Open+Sans:wght@300;400;500&family=Righteous&display=swap" rel="stylesheet"/> */}
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
@@ -69,7 +69,7 @@ export default function Tudc() {
                   </div>
                 </div>
                 <div className={style.sec1Image}>
-                  <Image  width={400} height={400} src='/assets/img/database.svg'/>
+                  <Image alt='' width={400} height={400} src='/assets/img/database.svg'/>
                 </div>
               </div>
           </div>
