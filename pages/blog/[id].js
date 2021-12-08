@@ -4,12 +4,7 @@ import Script from "next/script";
 export default function Id({ blogPage }) {
   return (
     <>
-      <Script
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `${blogPage}`,
-        }}
-      />
+      <div dangerouslySetInnerHTML={{__html: `${blogPage}`}}/>
       <Tag />
     </>
   );
