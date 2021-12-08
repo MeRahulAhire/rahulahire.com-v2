@@ -1,22 +1,27 @@
-import axios from 'axios'
-import Tag from '../../component/tag'
-export default function Id({blogPage}) {
-    
-    return (
-        <>
-           {blogPage}
-           <Tag/>
-        </>
-    )
+import axios from "axios";
+import Tag from "../../component/tag";
+import Script from "next/script";
+export default function Id({ blogPage }) {
+  return (
+    <>
+      <Script
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `${blogPage}`,
+        }}
+      />
+      <Tag />
+    </>
+  );
 }
 
 export async function getServerSideProps(context) {
-    const id = context.params.id
-    const baseUrl = `https://blog.rahulahire.com/${id}`
-    const res = (await axios.get(baseUrl)).data
-    return {
-        props:{
-            blogPage: res
-        }
-    }
+  const id = context.params.id;
+  const baseUrl = `https://blog.rahulahire.com/${id}`;
+  const res = (await axios.get(baseUrl)).data;
+  return {
+    props: {
+      blogPage: res,
+    },
+  };
 }
