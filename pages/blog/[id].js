@@ -1,10 +1,10 @@
 import axios from "axios";
-import Tag from "../../component/tag";
+// import Tag from "../../component/tag";
 export default function Id({ blogPage }) {
   return (
     <>
       <div dangerouslySetInnerHTML={{__html: `${blogPage}`}}/>
-      <Tag />
+      {/* <Tag /> */}
     </>
   );
 }
