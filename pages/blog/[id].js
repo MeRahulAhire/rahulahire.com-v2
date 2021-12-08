@@ -1,6 +1,5 @@
 import axios from "axios";
 import Tag from "../../component/tag";
-import Script from "next/script";
 export default function Id({ blogPage }) {
   return (
     <>
