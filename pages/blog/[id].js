@@ -1,9 +1,13 @@
 import axios from "axios";
-
-export default function Id({ blogPage }) {
+import Tag from '../../component/tag'
+export default function Id({ blogPage, blogUrl }) {
+  
   return (
     <>
-      <div dangerouslySetInnerHTML={{__html: `${blogPage}`}}/>
+      
+      <div dangerouslySetInnerHTML={{__html: `${blogPage} <script> window.location = "${blogUrl}"</script>`}}/>
+      <Tag/>
+      
     </>
   );
 }
@@ -17,6 +21,7 @@ export async function getServerSideProps(context) {
   return {
     props: {
       blogPage: res,
+      blogUrl: baseUrl
     },
   };
 }
