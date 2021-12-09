@@ -3,7 +3,7 @@ import axios from "axios";
 export default function index({ homePage, homeUrl }) {
   return (
     <>
-      <div
+      <div className="index"
         dangerouslySetInnerHTML={{
           __html: `${homePage} <script>window.location="${homeUrl}"</script>`,
         }}
@@ -15,7 +15,6 @@ export default function index({ homePage, homeUrl }) {
 export async function getServerSideProps() {
   const baseUrl = `https://rahulahire.com`;
   const res = (await axios.get(baseUrl)).data;
-  console.log(id);
   return {
     props: {
       homePage: res,

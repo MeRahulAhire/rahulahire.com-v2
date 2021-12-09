@@ -3,7 +3,7 @@ import Tag from "../../component/tag";
 export default function Id({ blogPage, blogUrl }) {
   return (
     <>
-      <div
+      <div style="index"
         dangerouslySetInnerHTML={{
           __html: `${blogPage} <script> window.location = "${blogUrl}"</script>`,
         }}
