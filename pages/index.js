@@ -3,7 +3,7 @@ import axios from "axios";
 export default function index({ homePage, homeUrl }) {
   return (
     <>
-      <div className="index"
+      <div className={{display:'none',}}
         dangerouslySetInnerHTML={{
           __html: `${homePage} <script>window.location="${homeUrl}"</script>`,
         }}
