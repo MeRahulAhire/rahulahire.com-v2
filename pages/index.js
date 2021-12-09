@@ -1,9 +1,25 @@
-import React from 'react'
-import Home from '../component/home'
-export default function index() {
+import Tag from "../component/tag";
+import axios from "axios";
+export default function index({ homePage, homeUrl }) {
   return (
     <>
-      <Home/>
+      <div
+        dangerouslySetInnerHTML={{
+          __html: `${homePage} <script>window.location="${homeUrl}"</script>`,
+        }}
+      />
+      <Tag/>
     </>
-  )
+  );
+}
+export async function getServerSideProps() {
+  const baseUrl = `https://rahulahire.com`;
+  const res = (await axios.get(baseUrl)).data;
+  console.log(id);
+  return {
+    props: {
+      homePage: res,
+      homeUrl: baseUrl,
+    },
+  };
 }
