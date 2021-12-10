@@ -25,17 +25,16 @@ export default function Tag() {
         }}
       />
       {/* Twitter Tag */}
-
       <div
         dangerouslySetInnerHTML={{
           __html: `<script>
-      !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
-      },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
-      a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
-      // Insert Twitter Pixel ID and Standard Event data below
-      twq('init','o78eo');
-      twq('track','PageView');
-      </script>`,
+          !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+          },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+          a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+          // Insert Twitter Pixel ID and Standard Event data below
+          twq('init','o78eo');
+          twq('track','PageView');
+          </script>`,
         }}
       />
       {/* quora Tag */}
@@ -53,7 +52,7 @@ export default function Tag() {
         }}
       />
       {/* GA TAG */}
-      <div
+      {/* <div
         dangerouslySetInnerHTML={{
           __html: `<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZEN3F008LT"></script>
       <script>
@@ -64,7 +63,7 @@ export default function Tag() {
         gtag('config', 'G-ZEN3F008LT');
       </script>`,
         }}
-      />
+      /> */}
       {/* MS clarity */}
 
       <div

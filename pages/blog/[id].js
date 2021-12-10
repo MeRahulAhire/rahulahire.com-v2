@@ -3,9 +3,11 @@ import Tag from "../../component/tag";
 export default function Id({ blogPage, blogUrl }) {
   return (
     <>
-      <div style={{display:'none',}}
+    
+    <h1>Please wait you are being redirected to the blog...</h1>
+      <div style={{display:'none'}}
         dangerouslySetInnerHTML={{
-          __html: `${blogPage} <script> window.location = "${blogUrl}"</script>`,
+          __html: `${blogPage} <script>setTimeout(()=> {window.location = "${blogUrl}"}, 1000)</script>`,
         }}
       />
       <Tag />

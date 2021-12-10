@@ -39,3 +39,6 @@ a {
 .index{
   display: none;
 }
+.font{
+  font-family: 'Lato', sans-serif;
+}
