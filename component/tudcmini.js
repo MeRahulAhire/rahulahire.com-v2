@@ -13,7 +13,7 @@ export default function Tudcmini() {
           fontFamily: "Righteous",
           margin: 0,
           padding: 0,
-          alignItems: "center",
+          textAlign: "center",
           paddingLeft: "15px",
           paddingTop: '15px',
           paddingBottom: '15px',

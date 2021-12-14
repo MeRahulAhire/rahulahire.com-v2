@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import Head from "next/head";
 import style from "../style/home.module.css";
 import Container from "./container";
+import Tudcmini from "./tudcmini";
 export default function Home() {
   useEffect(() => {
     document.getElementById("vid1").play();
@@ -122,7 +123,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+      <Tudcmini/>
       <section className={style["sec-container"]}>
         <div className={`${style.sidedrawer} ${style["sd-sec2"]}`}>
             <div className={style.sdbg}>

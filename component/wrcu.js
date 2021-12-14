@@ -2,6 +2,7 @@
 import Head from "next/head";
 import style from '../style/wrcu.module.css'
 import Container from "./container";
+import Tudcmini from "./tudcmini";
 const rcu = () => {
   const rps = document.getElementById("rps");
   const size = document.getElementById("size");
@@ -187,6 +188,7 @@ export default function Wrcu() {
             Tweet it.
           </a>
         </div>
+        <Tudcmini style={{position: 'absolute',}}/>
       </div>
     </>
   );
