@@ -20,7 +20,7 @@ export default function Tudc() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="https://cdn.plyr.io/3.6.9/plyr.css" />
         <title>The Ultimate DynamoDB Course</title>
-        <link rel="shortcut icon" href="https://s3.ap-south-1.amazonaws.com/rahulahire.com/server+image300x300.jpg" type="image/x-icon" />
+        <link rel="shortcut icon" href="https://static.rahulahire.com/server+image300x300.jpg" type="image/x-icon" />
         <meta name="theme-color" content="#0f0f0f" />
         {/* <link href="https://fonts.googleapis.com/css2?family=Alata&family=Architects+Daughter&family=Lobster&family=Open+Sans:wght@300;400;500&family=Righteous&display=swap" rel="stylesheet"/> */}
         <meta
@@ -35,7 +35,7 @@ export default function Tudc() {
 
         <meta
           property="og:image"
-          content="https://s3.ap-south-1.amazonaws.com/rahulahire.com/tudc+cover+image+1080p.png"
+          content="https://static.rahulahire.com/tudc+cover+image+1080p.png"
         />
         <meta property="og:title" content="The Ultimate DynamoDB Course" />
         <meta
@@ -52,7 +52,7 @@ export default function Tudc() {
         />
         <meta
           name="twitter:image"
-          content="https://s3.ap-south-1.amazonaws.com/rahulahire.com/tudc+cover+image+1080p.png"
+          content="https://static.rahulahire.com/tudc+cover+image+1080p.png"
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image:alt" content="Rahul Ahire" />

@@ -7,7 +7,7 @@
   place-items: center;
 }
 .sd-sec1 {
-  background-image: url("https://s3.ap-south-1.amazonaws.com/rahulahire.com/white-wall-texture.jpg");
+  background-image: url("https://static.rahulahire.com/white-wall-texture.jpg");
 }
 .sd-wrapper {
   width: 95%;
@@ -71,7 +71,7 @@
 .sd-sec2 {
   /* background-color: #0f0f0f; */
   color: #f7f7f7;
-  background-image: url("https://s3.ap-south-1.amazonaws.com/rahulahire.com/shaniwar-wada.jpg");
+  background-image: url("https://static.rahulahire.com/shaniwar-wada.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -95,7 +95,7 @@
 }
 .sd-sec3 {
   color: #f7f7f7;
-  background-image: url("https://s3.ap-south-1.amazonaws.com/rahulahire.com/pexels-adrien-olichon-3646206.jpg");
+  background-image: url("https://static.rahulahire.com/pexels-adrien-olichon-3646206.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -108,13 +108,13 @@
   zoom: 0.1;
 }
 .sd-4 {
-  background-image: url("https://s3.ap-south-1.amazonaws.com/rahulahire.com/pexels-oussama-ghanemi-4254073.jpg");
+  background-image: url("https://static.rahulahire.com/pexels-oussama-ghanemi-4254073.jpg");
   background-position: center;
   background-size: cover;
   color: #0f0f0f;
 }
 .sd-5 {
-  background-image: url("https://s3.ap-south-1.amazonaws.com/rahulahire.com/pexels-spacex-23764.jpg");
+  background-image: url("https://static.rahulahire.com/pexels-spacex-23764.jpg");
   background-position: center;
   background-size: cover;
   color: #f7f7f7;
@@ -122,7 +122,7 @@
 .pink-wrap {
   height: 300px;
   width: 100%;
-  background-image: url("https://s3.ap-south-1.amazonaws.com/rahulahire.com/pink-paint-brush-bg.jpg");
+  background-image: url("https://static.rahulahire.com/pink-paint-brush-bg.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position: center;

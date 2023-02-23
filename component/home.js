@@ -48,7 +48,7 @@ export default function Home() {
         <link
           rel="shortcut icon"
           type="image/x-icon"
-          href="https://s3.ap-south-1.amazonaws.com/rahulahire.com/blackhole.ico"
+          href="https://static.rahulahire.com/blackhole.ico"
         />
         <meta name="theme-color" content="#0f0f0f" />
         <meta
@@ -67,7 +67,7 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="https://s3.ap-south-1.amazonaws.com/rahulahire.com/black-hole.jpg"
+          content="https://static.rahulahire.com/black-hole.jpg"
         />
         <meta property="og:title" content="Hi, I'm Rahul Ahire" />
         <meta
@@ -84,7 +84,7 @@ export default function Home() {
         />
         <meta
           name="twitter:image"
-          content="https://s3.ap-south-1.amazonaws.com/rahulahire.com/black-hole.jpg"
+          content="https://static.rahulahire.com/black-hole.jpg"
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image:alt" content="Rahul Ahire - Alt" />
@@ -328,7 +328,7 @@ export default function Home() {
                 rel="noreferrer"
               >
                 <img
-                  src="https://s3.ap-south-1.amazonaws.com/rahulahire.com/twitter.svg"
+                  src="https://static.rahulahire.com/twitter.svg"
                   alt="logo"
                 />{" "}
                 Twitter
@@ -341,7 +341,7 @@ export default function Home() {
                 rel="noreferrer"
               >
                 <img
-                  src="https://s3.ap-south-1.amazonaws.com/rahulahire.com/linkedin.svg"
+                  src="https://static.rahulahire.com/linkedin.svg"
                   alt="logo"
                 />{" "}
                 LinkedIn
@@ -354,7 +354,7 @@ export default function Home() {
                 rel="noreferrer"
               >
                 <img
-                  src="https://s3.ap-south-1.amazonaws.com/rahulahire.com/github.svg"
+                  src="https://static.rahulahire.com/github.svg"
                   alt="logo"
                 />{" "}
                 Github
@@ -367,7 +367,7 @@ export default function Home() {
                 rel="noreferrer"
               >
                 <img
-                  src="https://s3.ap-south-1.amazonaws.com/rahulahire.com/instagram.svg"
+                  src="https://static.rahulahire.com/instagram.svg"
                   alt="logo"
                 />{" "}
                 Instagram

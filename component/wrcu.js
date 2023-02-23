@@ -81,7 +81,7 @@ export default function Wrcu() {
         />
         <meta
           property="og:image"
-          content="https://s3.ap-south-1.amazonaws.com/rahulahire.com/DynamoDB-wrcu-thumbnail.png"
+          content="https://static.rahulahire.com/DynamoDB-wrcu-thumbnail.png"
         />
         <meta
           property="og:title"
@@ -104,7 +104,7 @@ export default function Wrcu() {
         />
         <meta
           name="twitter:image"
-          content="https://s3.ap-south-1.amazonaws.com/rahulahire.com/DynamoDB-wrcu-thumbnail.png"
+          content="https://static.rahulahire.com/DynamoDB-wrcu-thumbnail.png"
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image:alt" content="Rahul Ahire" />
@@ -115,7 +115,7 @@ export default function Wrcu() {
           <div className={style["top-wrap"]}>
             A free tool to calculate the throughput in DynamoDB <br />
             <a
-              href="https://letsfigureout.com/2020/02/01/calculating-wcu-and-rcu-for-amazon-dynamodb/"
+              href="https://letsfigureout.com/calculating-wcu-and-rcu-for-amazon-dynamodb/"
               target="_blank"
               rel="noopener noreferrer"
             >

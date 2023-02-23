@@ -25,7 +25,7 @@ export default function Dynamodb() {
 
         <meta
           property="og:image"
-          content="https://s3.ap-south-1.amazonaws.com/rahulahire.com/tudc+cover+image+1080p.png"
+          content="https://static.rahulahire.com/tudc+cover+image+1080p.png"
         />
         <meta property="og:title" content="The Ultimate DynamoDB Course" />
         <meta
@@ -42,7 +42,7 @@ export default function Dynamodb() {
         />
         <meta
           name="twitter:image"
-          content="https://s3.ap-south-1.amazonaws.com/rahulahire.com/tudc+cover+image+1080p.png"
+          content="https://static.rahulahire.com/tudc+cover+image+1080p.png"
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image:alt" content="Rahul Ahire" />
