@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import style from '../style/tudc.module.css'
 import Image from "next/image";
 import Container from '../component/container'
-import Plyr from 'react-plyr';
+// import Plyr from 'react-plyr';
 export default function Tudc() {
   const buyCourse =() => {
     window.open("https://rahulahire.thinkific.com/");
@@ -11,7 +11,7 @@ export default function Tudc() {
   useEffect(()=> {
     window.location = 'https://rahulahire.thinkific.com/courses/the-ultimate-dynamodb-course'
 })
-  const player = new Plyr('#player');
+  // const player = new Plyr('#player');
   return (
     <div style={{display: 'none',}}>
       <Head>
@@ -79,10 +79,10 @@ export default function Tudc() {
           <div className={style.vidText}>
             Why get this Course?
           </div>
-        <Plyr
+        {/* <Plyr
       type="vimeo" // or "vimeo"
       videoId="652938797"
-    />
+    /> */}
         </div>
 
       </section>
