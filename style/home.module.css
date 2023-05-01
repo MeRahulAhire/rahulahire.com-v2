@@ -82,6 +82,9 @@
   display: grid;
   place-items: center;
 }
+.pune_a{
+  color: #0177d9;
+}
 .sd-sec2 h3 {
   font-family: "Righteous";
   font-size: 1.5rem;

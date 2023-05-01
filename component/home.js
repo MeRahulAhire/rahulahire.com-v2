@@ -12,39 +12,41 @@ export default function Home() {
   let isSec4Scrolled = false;
   let isSec5Scrolled = false;
   useEffect(() => {
-      window.addEventListener("scroll", () => {
-        const scrollPosition = (window.scrollY / window.innerHeight) * 100;
-        const vid2 = document.getElementById("vid2");
-        const vid3 = document.getElementById("vid3");
-        const vid4 = document.getElementById("vid4");
-        const vid5 = document.getElementById("vid5");
-    
-        if (scrollPosition > 69 && !isSec2Scrolled) {
-          vid2.play();
-          isSec2Scrolled = true;
-        }
-        if (scrollPosition > 169 && !isSec3Scrolled) {
-          vid3.play();
-          isSec3Scrolled = true;
-        }
-        if (scrollPosition > 269 && !isSec4Scrolled) {
-          vid4.play();
-          isSec4Scrolled = true;
-        }
-        if (scrollPosition > 369 && !isSec5Scrolled) {
-          vid5.play();
-          isSec5Scrolled = true;
-        }
-      });
-  })
+    window.addEventListener("scroll", () => {
+      const scrollPosition = (window.scrollY / window.innerHeight) * 100;
+      const vid2 = document.getElementById("vid2");
+      const vid3 = document.getElementById("vid3");
+      const vid4 = document.getElementById("vid4");
+      const vid5 = document.getElementById("vid5");
+
+      if (scrollPosition > 69 && !isSec2Scrolled) {
+        vid2.play();
+        isSec2Scrolled = true;
+      }
+      if (scrollPosition > 169 && !isSec3Scrolled) {
+        vid3.play();
+        isSec3Scrolled = true;
+      }
+      if (scrollPosition > 269 && !isSec4Scrolled) {
+        vid4.play();
+        isSec4Scrolled = true;
+      }
+      if (scrollPosition > 369 && !isSec5Scrolled) {
+        vid5.play();
+        isSec5Scrolled = true;
+      }
+    });
+  });
   return (
     <>
-    
       <Head>
         <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Lobster&family=Open+Sans:wght@300;400;500&family=Righteous&display=swap"/>
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Lobster&family=Open+Sans:wght@300;400;500&family=Righteous&display=swap"
+        />
         <link
           rel="shortcut icon"
           type="image/x-icon"
@@ -90,7 +92,7 @@ export default function Home() {
         <meta name="twitter:image:alt" content="Rahul Ahire - Alt" />
         <title>Hi, I'm Rahul Ahire</title>
       </Head>
-      <Container/>
+      <Container />
       <section className={style["sec-container"]}>
         <div className={`${style.sidedrawer} ${style["sd-sec1"]}`}>
           <div className={style["sd-wrapper"]}>
@@ -123,21 +125,20 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <Tudcmini/>
+      <Tudcmini />
       <section className={style["sec-container"]}>
         <div className={`${style.sidedrawer} ${style["sd-sec2"]}`}>
-            <div className={style.sdbg}>
-
-          <div className={style["sd-wrapper"]}>
-            <h3>Pune, the City where I live</h3>
-            <p>
-              Be it Gandhi, Britishers or Shri Chhatrapati Shivaji Maharaj, Pune
-              was an important administrative area for these mens. Pune has its
-              own rich cultural history.{" "}
-              <a href="https://en.wikipedia.org/wiki/Pune">Know more</a>.
-            </p>
-          </div>
+          <div className={style.sdbg}>
+            <div className={style["sd-wrapper"]}>
+              <h3>Pune, the City where I live</h3>
+              <p>
+                Be it Gandhi, Britishers or Shri Chhatrapati Shivaji Maharaj,
+                Pune was an important administrative area for these mens. Pune
+                has its own rich cultural history.{" "}
+                <a href="https://en.wikipedia.org/wiki/Pune">Know more</a>.
+              </p>
             </div>
+          </div>
         </div>
         <div className={style["vid-container"]}>
           <video
@@ -148,24 +149,24 @@ export default function Home() {
           ></video>
         </div>
         <div className={`${style["mob-drawer"]} ${style["sd-sec2"]}`}>
-            <div className={style.sdbg}>
-
-          <div className={`${style["sd-wrapper"]} ${style["sd-mobi"]}`}>
-            <h3>Pune, the City where I live</h3>
-            <p>
-              Be it Gandhi, Britishers or Shri Chhatrapati Shivaji Maharaj, Pune
-              was an important administrative area for these mens. Pune has its
-              own rich cultural history.{" "}
-              <a
-                href="https://en.wikipedia.org/wiki/Pune"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Know more
-              </a>
-            </p>
-          </div>
+          <div className={style.sdbg}>
+            <div className={`${style["sd-wrapper"]} ${style["sd-mobi"]}`}>
+              <h3>Pune, the City where I live</h3>
+              <p>
+                Be it Gandhi, Britishers or Shri Chhatrapati Shivaji Maharaj,
+                Pune was an important administrative area for these mens. Pune
+                has its own rich cultural history.{" "}
+                <a
+                  className={style.pune_a}
+                  href="https://en.wikipedia.org/wiki/Pune"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Know more
+                </a>
+              </p>
             </div>
+          </div>
         </div>
       </section>
 
@@ -205,9 +206,8 @@ export default function Home() {
               Ever since my childhood I've always been facinated with all shows
               like Cosmos, Curiosity, Into the wormhole with Morgan Freeman,etc.
               Questioning on the mechanics of the Universe has always kinda felt
-              spiritual to me. Although I've no in-depth Knowledge on
-              Astrophysics, This is definitely something I'll be looking forward
-              in future.
+              spiritual to me. Currently I'm studying physics in wide variety of
+              topics to understand these concepts in detail.
             </p>
           </div>
         </div>
@@ -225,9 +225,8 @@ export default function Home() {
               Ever since my childhood I've always been facinated with all shows
               like Cosmos, Curiosity, Into the wormhole with Morgan Freeman,etc.
               Questioning on the mechanics of the Universe has always kinda felt
-              spiritual to me. Although I've no in-depth Knowledge on
-              Astrophysics, This is definitely something I'll be looking forward
-              in future.
+              spiritual to me. Currently I'm studying physics in wide variety of
+              topics to understand these concepts in detail.
             </p>
           </div>
         </div>
@@ -280,9 +279,29 @@ export default function Home() {
           </p>
           <ol>
             <li>
+              I've been utterly mesmerised by how Elon Musk and his team at
+              Neuralink has achieved the feat in Brain Computer Interface in
+              just 3-4 years that whole medical industry hasn't been able to
+              figure out in last 3 decades. Also taking inspiration from
+              business model of{" "}
+              <a
+                href="https://youtu.be/A7crRh47dQI"
+                target="_blank"
+                title="The Story of Linus Tech Tips"
+                rel="noreferrer"
+              >
+                Linus Tech Tips
+              </a>
+              , I have lots of question around Astrophysics to which I want to
+              solve by creating a edu-media research organisation that can
+              spread the core knowledge of Physics to millions of people and
+              build a platform to organise all the information in easy
+              accessible way.
+            </li>
+            <li>
               Simplified P2P file sharing and efficient media collaboration
-              platform for Tech companies and Content Creator. Details regarding
-              this will be updated later.
+              platform for Tech companies and Content Creator. Please checkout
+              the link in the 4th point.
             </li>
             <li>
               Data is the new oil. Just like how FB, Google use your private
@@ -292,24 +311,15 @@ export default function Home() {
               everything that we do has a digital footprint.
             </li>
             <li>
-              I've been utterly mesmerised by how Elon Musk and his team at
-              Neuralink has achieved the feat in Brain Computer Interface in
-              just 3-4 years that whole medical industry hasn't been able to
-              figure out in last 3 decades. Also taking inspiration from
-              business model of{" "}
+              Finally a blog explaining all of these -{" "}
               <a
-                href="https://www.youtube.com/c/LinusTechTips"
+                href="https://blog.rahulahire.com/my-10-year-career-plan"
                 target="_blank"
-                title="Linus Tech Tips"
-                rel="noreferrer"
+                rel="noopener noreferrer"
               >
-                Linus Tech Tips
+                My 10 year career plan
               </a>
-              , I have lots of question around Astrophysics to which I want to
-              solve by creating a edu-media research organisation and connect
-              ancient knowledge with modern age science which we are
-              disconnected. I find there's immense value for society to regain
-              new awarness from it.
+              .
             </li>
           </ol>
         </div>
